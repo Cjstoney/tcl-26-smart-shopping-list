@@ -5,7 +5,7 @@ const CreateItem = () => {
   async function handleClick(e) {
     await db.collection('products').add({
       name: 'NewItem',
-      date: Date.now().toLocaleString('en-US', { timezone: 'PCT' }),
+      date: Date.now().toLocaleString('en-US'),
     });
   }
   return <button onClick={handleClick}>Add an Item</button>;

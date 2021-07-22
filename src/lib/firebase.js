@@ -3,16 +3,20 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-// Initalize Firebase.
-const firebaseConfig = {
-  apiKey: 'AIzaSyAi9oBP-hXAU43ubGEkmF3eXmWl48dNVK0',
-  authDomain: 'smart-list-cs.firebaseapp.com',
-  projectId: 'smart-list-cs',
-  storageBucket: 'smart-list-cs.appspot.com',
-  messagingSenderId: '24601715025',
-  appId: '1:24601715025:web:037051b48a46727f657370',
-  measurementId: 'G-MXNYC50JM5',
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
+  apiKey: 'AIzaSyCbHPaQGPTxbqtofYtDgUpk9VwHWfebXjo',
+  authDomain: 'smart-list-project.firebaseapp.com',
+  projectId: 'smart-list-project',
+  storageBucket: 'smart-list-project.appspot.com',
+  messagingSenderId: '904551609705',
+  appId: '1:904551609705:web:4e8eb9253b4bd26b1a79f8',
+  measurementId: 'G-6L7D38C59X',
 };
+// Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 let firebaseInstance = firebase.initializeApp(firebaseConfig);
 const db = firebaseInstance.firestore();

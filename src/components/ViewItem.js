@@ -3,7 +3,7 @@ import { db } from '../lib/firebase';
 import { useCollection } from 'react-firebase-hooks/firestore';
 
 const ViewItem = () => {
-  const [listItems, loading, error] = useCollection(db.collection('items'));
+  const [listItems, loading, error] = useCollection(db.collection('products'));
 
   return (
     <div>
