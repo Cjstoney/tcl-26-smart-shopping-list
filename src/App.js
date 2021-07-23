@@ -3,6 +3,7 @@ import ViewItem from './components/ViewItem';
 import './App.css';
 import CreateItem from './components/CreateItem';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <CreateItem />
         </Route>
       </Switch>
+      <Navbar />
     </Router>
   );
 }
