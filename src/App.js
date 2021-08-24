@@ -1,7 +1,7 @@
 import React from 'react';
 import ViewItem from './components/ViewItem';
 import './App.css';
-import CreateItem from './components/CreateItem';
+import CreateList from './components/createList/CreateList';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 
@@ -13,7 +13,7 @@ function App() {
           <ViewItem />
         </Route>
         <Route path="/add">
-          <CreateItem />
+          <CreateList />
         </Route>
       </Switch>
       <Navbar />
