@@ -6,6 +6,8 @@ import { Redirect } from 'react-router';
 const CreateList = () => {
   async function handleClick(e) {
     // on Click it should create a new token and then add it to the db
+    const token = generateToken();
+    localStorage.setItem('token', token);
     // then check that the token was added to the DB
     // then redirect to the view page.
     try {
@@ -14,7 +16,7 @@ const CreateList = () => {
         .add({
           name: 'NewItem',
           createdAt: Date.now(),
-          token: generateToken(),
+          token,
         })
         .then((response) => {
           if (!!response) {
